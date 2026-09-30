@@ -1,77 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-          content="Learn more about Shivani, an Electronics and Communication Engineering student.">
+    <meta
+        name="description"
+        content="Learn more about Shivani, an ECE student interested in embedded systems, IoT and web development."
+    >
 
-    <meta name="author"
-          content="Shivani">
-
-    <title>About | Shivani Portfolio</title>
+    <title>About | Shivani</title>
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
-    <header>
-        <div class="container">
-            <h1>About Me</h1>
+    <!-- Animated background -->
 
-            <nav aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" aria-current="page">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+    <div class="ambient-background" aria-hidden="true">
+
+        <div class="background-grid"></div>
+
+        <span class="ambient-orb orb-one"></span>
+        <span class="ambient-orb orb-two"></span>
+        <span class="ambient-orb orb-three"></span>
+
+        <span class="floating-dot dot-one"></span>
+        <span class="floating-dot dot-two"></span>
+        <span class="floating-dot dot-three"></span>
+
+    </div>
+
+
+    <!-- Header -->
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Shivani<span>.</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a
+                    href="about.html"
+                    class="active"
+                    aria-current="page"
+                >
+                    About
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
             </nav>
+
+            <button
+                type="button"
+                class="theme-toggle"
+                id="themeToggle"
+                aria-label="Switch to dark mode"
+                aria-pressed="false"
+            >
+                🌙
+            </button>
+
         </div>
+
     </header>
 
-    <main id="main-content">
 
-        <article class="container">
+    <main>
 
-            <section aria-labelledby="intro-heading">
-                <h2 id="intro-heading">Who I Am</h2>
+        <section class="page-hero">
 
-                <p>
-                    I am an Electronics and Communication Engineering student
-                    interested in technology, programming and real-world
-                    engineering projects.
+            <div class="container">
+
+                <p class="eyebrow">
+                    ABOUT ME
                 </p>
 
-                <p>
-                    I enjoy learning about embedded systems, IoT,
-                    web development and automation.
-                </p>
-            </section>
-
-            <section aria-labelledby="education-heading">
-                <h2 id="education-heading">Education</h2>
-
-                <h3>Bachelor of Engineering</h3>
+                <h1>
+                    Curious about how
+                    <span>technology works.</span>
+                </h1>
 
                 <p>
-                    Electronics and Communication Engineering
+                    I'm an ECE student who enjoys learning by
+                    creating practical projects.
                 </p>
-            </section>
 
-        </article>
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="container about-grid">
+
+                <div class="about-card">
+
+                    <h2>
+                        My journey
+                    </h2>
+
+                    <p>
+                        My interest lies at the intersection of
+                        electronics and software. I enjoy exploring
+                        embedded systems, IoT, web development and
+                        automation.
+                    </p>
+
+                    <p>
+                        Instead of only learning concepts,
+                        I try to understand them by building
+                        small practical projects.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <h2>
+                        Skills I'm exploring
+                    </h2>
+
+                    <div class="skill-list">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>C</span>
+                        <span>Python</span>
+                        <span>Arduino</span>
+                        <span>IoT</span>
+                        <span>Embedded Systems</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Shivani. All rights reserved.</p>
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Shivani.
+            </p>
+
+            <a href="contact.html">
+                Contact me →
+            </a>
+
         </div>
+
     </footer>
 
+
+    <script src="javascript/script.js"></script>
+
 </body>
+
 </html>

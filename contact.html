@@ -1,106 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-          content="Contact Lokithashivani through the accessible portfolio contact form.">
+    <meta
+        name="description"
+        content="Contact Shivani for projects, collaboration and opportunities."
+    >
 
-    <meta name="author"
-          content="Lokithashivani">
-
-    <title>Contact | Shivani Portfolio</title>
+    <title>Contact | Shivani</title>
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
-    <header>
-        <div class="container">
+    <div class="ambient-background" aria-hidden="true">
 
-            <h1>Contact Me</h1>
+        <div class="background-grid"></div>
 
-            <nav aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html" aria-current="page">Contact</a></li>
-                </ul>
+        <span class="ambient-orb orb-one"></span>
+        <span class="ambient-orb orb-two"></span>
+        <span class="ambient-orb orb-three"></span>
+
+        <span class="floating-dot dot-one"></span>
+        <span class="floating-dot dot-two"></span>
+        <span class="floating-dot dot-three"></span>
+
+    </div>
+
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Shivani<span>.</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="active"
+                    aria-current="page"
+                >
+                    Contact
+                </a>
+
             </nav>
 
+            <button
+                type="button"
+                class="theme-toggle"
+                id="themeToggle"
+                aria-label="Switch to dark mode"
+                aria-pressed="false"
+            >
+                🌙
+            </button>
+
         </div>
+
     </header>
 
-    <main id="main-content">
 
-        <section aria-labelledby="contact-heading">
+    <main>
+
+        <section class="page-hero">
 
             <div class="container">
 
-                <h2 id="contact-heading">Get In Touch</h2>
+                <p class="eyebrow">
+                    GET IN TOUCH
+                </p>
 
-                <form action="#" method="post">
+                <h1>
+                    Let's build something
+                    <span>interesting.</span>
+                </h1>
 
-                    <fieldset>
+                <p>
+                    Have a project idea, collaboration or opportunity?
+                    I'd love to hear from you.
+                </p>
 
-                        <legend>Contact Information</legend>
+            </div>
 
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
+        </section>
 
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                autocomplete="name"
-                                required
-                                aria-required="true">
+
+        <section class="section">
+
+            <div class="container contact-grid">
+
+
+                <div class="contact-info">
+
+                    <h2>
+                        Contact me
+                    </h2>
+
+                    <p>
+                        Feel free to reach out through the form.
+                    </p>
+
+                    <div class="contact-item">
+
+                        <span>01</span>
+
+                        <div>
+                            <strong>Email</strong>
+                            <p>
+                                your-email@example.com
+                            </p>
                         </div>
 
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
+                    </div>
 
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                autocomplete="email"
-                                required
-                                aria-required="true">
+
+                    <div class="contact-item">
+
+                        <span>02</span>
+
+                        <div>
+                            <strong>Location</strong>
+                            <p>
+                                Tamil Nadu, India
+                            </p>
                         </div>
 
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
+                    </div>
 
-                            <input
-                                type="text"
-                                id="subject"
-                                name="subject"
-                                required
-                                aria-required="true">
-                        </div>
+                </div>
 
-                        <div class="form-group">
-                            <label for="message">Message</label>
 
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="6"
-                                required
-                                aria-required="true"></textarea>
-                        </div>
+                <form class="contact-form">
 
-                        <button type="submit">
-                            Send Message
-                        </button>
+                    <div class="form-group">
 
-                    </fieldset>
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="your@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Send Message →
+                    </button>
 
                 </form>
 
@@ -110,11 +224,26 @@
 
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Shivani. All rights reserved.</p>
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Shivani.
+            </p>
+
+            <a href="index.html">
+                Back home →
+            </a>
+
         </div>
+
     </footer>
 
+
+    <script src="javascript/script.js"></script>
+
 </body>
+
 </html>

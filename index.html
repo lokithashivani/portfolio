@@ -1,80 +1,337 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta
-      name="description"
-      content="Personal portfolio website showcasing skills, projects and contact information."
-    />
+<head>
+    <meta charset="UTF-8">
 
     <meta
-      name="keywords"
-      content="portfolio, web development, HTML5, CSS, projects"
-    />
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="author" content="Lokithashivani" />
+    <meta
+        name="description"
+        content="Shivani's portfolio featuring web development, IoT and embedded systems projects."
+    >
 
-    <title>Shivani | Personal Portfolio</title>
+    <title>Shivani | ECE Student & Developer</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <body>
-    <header>
-      <div class="container">
-        <h1>Lokithashivani</h1>
+<body>
 
-        <p>ECE Student | Web Developer | Embedded Systems Enthusiast</p>
+    <!-- =====================================
+         ANIMATED BACKGROUND
+    ====================================== -->
 
-        <nav aria-label="Main navigation">
-          <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="ambient-background" aria-hidden="true">
+
+        <div class="background-grid"></div>
+
+        <span class="ambient-orb orb-one"></span>
+        <span class="ambient-orb orb-two"></span>
+        <span class="ambient-orb orb-three"></span>
+
+        <span class="floating-dot dot-one"></span>
+        <span class="floating-dot dot-two"></span>
+        <span class="floating-dot dot-three"></span>
+
+    </div>
+
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Shivani<span>.</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+
+                <a
+                    href="index.html"
+                    class="active"
+                    aria-current="page"
+                >
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+            <button
+                type="button"
+                class="theme-toggle"
+                id="themeToggle"
+                aria-label="Switch to dark mode"
+                aria-pressed="false"
+            >
+                🌙
+            </button>
+
+        </div>
+
     </header>
 
-    <main id="main-content">
-      <section aria-labelledby="welcome-heading">
-        <div class="container">
-          <h2 id="welcome-heading">Welcome to My Portfolio</h2>
 
-          <p>
-            Hello! I am Lokithashivani, an Electronics and Communication Engineering
-            student interested in web development, embedded systems and
-            technology.
-          </p>
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
 
-          <a class="button" href="projects.html"> View My Projects </a>
-        </div>
-      </section>
+    <main>
 
-      <section aria-labelledby="skills-heading">
-        <div class="container">
-          <h2 id="skills-heading">My Skills</h2>
+        <!-- HERO -->
 
-          <ul>
-            <li>HTML5 & CSS3</li>
-            <li>C Programming</li>
-            <li>Python</li>
-            <li>Embedded Systems</li>
-            <li>Arduino</li>
-            <li>IoT</li>
-          </ul>
-        </div>
-      </section>
+        <section class="hero-section">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+                        ECE STUDENT • DEVELOPER • CREATOR
+                    </p>
+
+                    <h1>
+                        Building ideas into
+                        <span>real projects.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm an Electronics and Communication Engineering
+                        student exploring embedded systems, IoT and
+                        web development through practical projects.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="projects.html"
+                            class="btn btn-primary"
+                        >
+                            View My Projects
+                        </a>
+
+                        <a
+                            href="about.html"
+                            class="btn btn-secondary"
+                        >
+                            About Me
+                        </a>
+
+                    </div>
+
+
+                    <div class="hero-stats">
+
+                        <div>
+                            <strong>ECE</strong>
+                            <span>Student</span>
+                        </div>
+
+                        <div>
+                            <strong>IoT</strong>
+                            <span>Exploring</span>
+                        </div>
+
+                        <div>
+                            <strong>Web</strong>
+                            <span>Building</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURE SECTION -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        WHAT I EXPLORE
+                    </p>
+
+                    <h2>
+                        Turning curiosity into skills.
+                    </h2>
+
+                    <p>
+                        I enjoy learning by building practical,
+                        useful and creative projects.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <h3>
+                            Web Development
+                        </h3>
+
+                        <p>
+                            Creating responsive and accessible
+                            websites using HTML, CSS and JavaScript.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ⚡
+                        </div>
+
+                        <h3>
+                            Embedded Systems
+                        </h3>
+
+                        <p>
+                            Exploring microcontrollers, sensors,
+                            electronics and hardware projects.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ◉
+                        </div>
+
+                        <h3>
+                            IoT Projects
+                        </h3>
+
+                        <p>
+                            Connecting hardware, communication
+                            systems and software to solve real problems.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LAPTOP VISUAL SECTION -->
+
+        <section class="visual-section">
+
+            <div class="container visual-grid">
+
+                <div class="visual-content">
+
+                    <p class="eyebrow">
+                        BUILD • TEST • IMPROVE
+                    </p>
+
+                    <h2>
+                        Learning technology
+                        through practice.
+                    </h2>
+
+                    <p>
+                        From writing code to experimenting with
+                        electronics, every project is an opportunity
+                        to understand how technology works.
+                    </p>
+
+                    <a
+                        href="projects.html"
+                        class="text-link"
+                    >
+                        Explore my projects →
+                    </a>
+
+                </div>
+                <div class="project-visual">
+
+    <div class="visual-symbols">
+
+        <span>{ }</span>
+        <span>&lt;/&gt;</span>
+        <span>⚡</span>
+        <span>◉</span>
+
+    </div>
+
+</div>
+
+
+                
+
+            </div>
+
+        </section>
+
     </main>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2026 Shivani. All rights reserved.</p>
-      </div>
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Shivani. Built with HTML, CSS & JavaScript.
+            </p>
+
+            <a href="contact.html">
+                Let's connect →
+            </a>
+
+        </div>
+
     </footer>
-  </body>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="javascript/script.js"></script>
+
+</body>
+
 </html>
