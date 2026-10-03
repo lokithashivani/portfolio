@@ -544,8 +544,7 @@ p {
 
 .hero-section {
 
-    min-height:
-        calc(100vh - 76px);
+    min-height: auto
 
     display: flex;
 
@@ -557,17 +556,15 @@ p {
 
 .hero-grid {
 
-    display: grid;
+    display: block;
 
-    gap: 50px;
-
-    align-items: center;
+    
 }
 
 
 .hero-content {
 
-    max-width: 700px;
+    max-width: 800px;
 }
 
 
